@@ -29,6 +29,25 @@ body{
     background-color: #F5F8FF;
 }
 
+/* Shared Style */
+.section{
+    margin-bottom: 120px;
+}
+.section-title{
+    font-size: 3.125rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 20px;
+}
+.section-description{
+    font-size: 1.375rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.title-accent{
+    color: #E95A08;
+}
+
+
 /* Header Styles */
 .navbar{
     display: flex;
@@ -52,15 +71,60 @@ body{
     color: #252432;
     font-weight: bold;
 }
+.nav-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 #cart{
     color: #000000;
+    padding-right: 24px;
 }
+
+
+/* Banner Section */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+.banner-content, 
+.banner-image {
+    flex: 1;
+}
+.banner-content{
+    padding-right: 30px;
+}
+#banner-title{
+    font-size: 4.125rem;
+}
+.banner-image{
+    width: 100%;
+    height: auto;
+}
+
 
 
 /* Mobile/Small device Responsive */
 
 @media screen and (max-width: 576px) {
+    /* Navbar Responsive */
     .menu-item{
         display: none;
     }
+
+    /* Banner Responsive */
+    .banner{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .banner-content{
+        width: calc(100%-40px);
+        padding: 0;
+        margin-left: 20px;
+    }
+
+
 }
