@@ -24,13 +24,13 @@
 }
 
 body{
-    max-width: 1280px;
-    margin: 0 auto;
     background-color: #F5F8FF;
 }
 
 /* Shared Style */
 .container{
+    max-width: 1280px;
+    margin: 0 auto;
     margin-bottom: 120px;
 }
 .section-title{
@@ -50,14 +50,16 @@ body{
     text-align: center;
     background-color: #E95A08;
     font-size: 1rem;
+    font-weight: bold;
     color: white;
     border: none;
     padding: 20px 80px;
     margin-bottom: 30px;
     cursor: pointer;
+    height: 3.75rem;
 }
 .btn-primary:hover{
-    background-color: #131313;
+    background-color: #d9431c;
     transition: background 0.3s ease;
 }
 
@@ -185,10 +187,59 @@ body{
     line-height: 1.5;
 }
 
+
+/* Join Section */
+.subscribe-section{
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 7rem 20px;
+    position: relative;
+}
+.subscribe-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 51, 79, 0.4);
+    z-index: 1;
+}
+.subscribe-content{
+    position: relative;
+    z-index: 2;
+    max-width: 1440px;
+    margin: auto;
+}
+.subscribe-form{
+    display: flex;
+    justify-content: center;
+}
+.subscribe-form input[type="email"] {
+    padding: 20px;
+    font-size: 1rem;
+    border: none;
+    width: 60%;
+    height: 3.75rem;
+}
+.subscribe-form .btn-primary{
+    margin: 0;
+}
+
+
+
+
 /* Mobile/Small device Responsive */
 
 @media screen and (max-width: 576px) {
 
+    /* Shared Style */
+    .section-title{
+        font-size: 2rem;
+    }
     /* Navbar Responsive */
     .menu-item{
         display: none;
@@ -205,7 +256,7 @@ body{
         padding: 0;
         margin: 0 10px;
     }
-    #banner-title, .section-title{
+    #banner-title{
         font-size: 2.5rem;
     }
     .section-description{
@@ -254,5 +305,6 @@ body{
     .plant-lover-content h2{
     padding: 0;
     }
-
+    /* Join Section */
+    
 }
