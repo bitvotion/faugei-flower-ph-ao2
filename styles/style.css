@@ -79,9 +79,11 @@ body{
 }
 .menu-items li a{
     text-decoration: none;
-    color: black;
     color: #8987A1;
 } 
+.menu-items li a:hover{
+    color: #252432;
+}
 #nav-home{
     color: #252432;
     font-weight: bold;
@@ -169,6 +171,7 @@ body{
     margin-left: 6rem;
 }
 .plant-lover-content h2{
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-right: 150px;
 }
@@ -229,16 +232,60 @@ body{
     margin: 0;
 }
 
+/* Footer Section */
+.footer-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 7rem;
+    padding: 6rem 20px;
+    margin-bottom: 0px;
+    padding-bottom: 1.5rem;
+}
+.footer-logo{
+    flex: 1;
+}
+.footer-logo img{
+   margin-bottom: 1rem;
+}
+.footer-logo .section-description{
+   padding-right: 6rem;
+}
+.footer-link-container{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 3rem;
+}
+.footer-links li{
+    margin-bottom: 2rem;
+}
+.footer-links li a:hover{
+    color: #252432;
+}
+.footer-links, .social-links{
+    list-style: none;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: black;
+    color: #8987A1;
+} 
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
-
-/* Mobile/Small device Responsive */
+/* Responsive for Mobile/Small device */
 
 @media screen and (max-width: 576px) {
 
     /* Shared Style */
     .section-title{
         font-size: 2rem;
+    }
+    .container{
+        margin-bottom: 60px;
     }
     /* Navbar Responsive */
     .menu-item{
@@ -305,6 +352,26 @@ body{
     .plant-lover-content h2{
     padding: 0;
     }
-    /* Join Section */
-    
+
+    /* Footer Section */
+    .footer-section{
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 3rem 20px;
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+    }
+    .footer-logo .section-description{
+    padding-right: 0;
+    }
+    .footer-link-container{
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-bottom: 0;
+    }
+    .social-links{
+    justify-content: flex-start;
+    gap: 2rem;
+    }
+
 }
