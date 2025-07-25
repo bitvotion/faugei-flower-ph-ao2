@@ -167,6 +167,16 @@ body{
     width: 100%;
     height: auto;
 }
+    /* Trusted Badge */
+    .plants-lover-image{
+        position: relative;
+    }
+    .badge{
+        position: absolute;
+        width: 50%;
+        top: -100px;
+        left: 400px;
+    }
 .plant-lover-content{
     margin-left: 6rem;
 }
@@ -351,6 +361,9 @@ body{
     }
     .plant-lover-content h2{
     padding: 0;
+    }
+    .badge{
+        display: none;
     }
 
     /* Footer Section */
