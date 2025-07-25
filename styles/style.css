@@ -210,7 +210,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.75rem;
     height: 400px;
     padding: 1rem;
     border-radius: 1rem;
@@ -376,6 +376,10 @@ body{
     .menu-item{
         display: none;
     }
+    .nav-logo img{
+        width: 60%;
+        height: auto;
+    }
 
     /* Banner Responsive */
     .banner{
@@ -451,6 +455,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     height: auto;
+    gap: 1rem;
     }
     .deal-item {
     height: 200px;
